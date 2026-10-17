@@ -2,7 +2,7 @@ import {test} from '@playwright/test'
 // import loginData from '../../testdata/login.json'
 // import quotesData from '../../testdata/quotes.json'
 
-test.only('contacts',async ({page}) => {
+test.only('quotes',async ({page}) => {
     await page.goto('http://localhost:8888/')
     await page.locator('//input[@name="user_name"]').fill('admin')
     await page.locator('//input[@name="user_password"]').fill('admin')
